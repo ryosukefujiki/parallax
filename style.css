@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.parallax {
+    height: 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content {
+    background-color: #fff;
+    height: 100%;
+    text-align: center;
+}
+
+.parallax.bg-01 {
+    background-image: url(img/sample-01.jpg);
+}
+
+.parallax.bg-02 {
+    background-image: url(img/sample-02.jpg);
+}
+
+.parallax.bg-03 {
+    background-image: url(img/sample-03.jpg);
+}
