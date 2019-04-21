@@ -44,28 +44,28 @@ $('.contact_btn').on({
 });
 
 $('.twitter').on({
-    'mouseenter': function () {
+    'touchstart mouseenter': function () {
         TweenMax.to('.twitter', 0.25, { right: 120, ease: Expo.easeOut });
     },
-    'mouseleave': function () {
+    'touchend mouseleave': function () {
         TweenMax.to('.twitter', 0.25, { right: 110, ease: Expo.easeOut });
     }
 });
 
 $('.facebook').on({
-    'mouseenter': function () {
+    'touchstart mouseenter': function () {
         TweenMax.to('.facebook', 0.25, { right: 96, bottom: 96, ease: Expo.easeOut });
     },
-    'mouseleave': function () {
+    'touchend mouseleave': function () {
         TweenMax.to('.facebook', 0.25, { right: 90, bottom: 90, ease: Expo.easeOut });
     }
 });
 
 $('.mail').on({
-    'mouseenter': function () {
+    'touchstart mouseenter': function () {
         TweenMax.to('.mail', 0.25, { bottom: 120, ease: Expo.easeOut });
     },
-    'mouseleave': function () {
+    'touchend mouseleave': function () {
         TweenMax.to('.mail', 0.25, { bottom: 110, ease: Expo.easeOut });
     }
 });
