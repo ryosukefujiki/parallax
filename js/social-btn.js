@@ -1,16 +1,22 @@
+var toggleSocialBtn = false;
+
 $('.contact').on({
     'mouseenter': function(){
-        var twitterBtn =  TweenMax.to('.twitter', 0.4, { right: 110, ease: Elastic.easeOut.config(0.5, 0.3), });
-        twitterBtn.delay(0);
-        var facebookBtn =  TweenMax.to('.facebook', 0.4, { right: 90, bottom:90, ease: Elastic.easeOut.config(0.5, 0.3), });
-        facebookBtn.delay(0.1);
-        var mailBtn = TweenMax.to('.mail', 0.4, { bottom: 110, ease: Elastic.easeOut.config(0.5, 0.3), });
-        mailBtn.delay(0.2);
+        toggleSocialBtn = !toggleSocialBtn;
+        if(toggleSocialBtn){
+            var twitterBtn =  TweenMax.to('.twitter', 0.4, { right: 110, ease: Elastic.easeOut.config(0.5, 0.3), });
+            twitterBtn.delay(0);
+            var facebookBtn =  TweenMax.to('.facebook', 0.4, { right: 90, bottom:90, ease: Elastic.easeOut.config(0.5, 0.3), });
+            facebookBtn.delay(0.1);
+            var mailBtn = TweenMax.to('.mail', 0.4, { bottom: 110, ease: Elastic.easeOut.config(0.5, 0.3), });
+            mailBtn.delay(0.2);
+        }
     }
 });
 
 $('.contact_btn').on({
     'mouseleave': function(){
+        toggleSocialBtn = false;
         var twitterBtn =  TweenMax.to('.twitter', 0.25, { right: 32,ease: Expo.easeOut });
         twitterBtn.delay(0);
         var facebookBtn =  TweenMax.to('.facebook', 0.25, { right: 32, bottom:32,ease: Expo.easeOut });
