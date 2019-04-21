@@ -20,7 +20,6 @@ $('.contact_btn').on({
     }
 });
 
-
 $('.twitter').on({
     'mouseenter': function(){
         TweenMax.to('.twitter', 0.25, { right: 120, ease: Expo.easeOut });
@@ -29,7 +28,6 @@ $('.twitter').on({
         TweenMax.to('.twitter', 0.25, { right: 110, ease: Expo.easeOut });
     }
 });
-
 
 $('.facebook').on({
     'mouseenter': function(){
@@ -40,7 +38,6 @@ $('.facebook').on({
     }
 });
 
-
 $('.mail').on({
     'mouseenter': function(){
         TweenMax.to('.mail', 0.25, { bottom: 120,ease: Expo.easeOut });
@@ -49,9 +46,3 @@ $('.mail').on({
         TweenMax.to('.mail', 0.25, { bottom: 110, ease: Expo.easeOut });
     }
 });
-
-
-
-
-
-
